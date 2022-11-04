@@ -83,6 +83,9 @@ main > section.hero {
   text-align: center;
   /* make this banner stick to the top! */
   position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  bottom: 0;
 }
 
 section.hero > .call-to-action {
@@ -111,8 +114,12 @@ main p {
 }
 
 .drop-cap::first-letter {
-  float:left;
-  font-size: large;
+  float: left;
+  font-size: 5em;
+  margin: 0 .1em 0 0;
+  line-height: 0.85;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
 }
 
 main > article img {
